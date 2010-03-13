@@ -1,0 +1,28 @@
+<p>
+  <b>User:</b>
+  <%=h @directorio.user_id %>
+</p>
+
+<p>
+  <b>Nombre:</b>
+  <%=h @directorio.nombre %>
+</p>
+
+<p>
+  <b>Mail:</b>
+  <%=h @directorio.mail %>
+</p>
+
+<p>
+  <b>Fono:</b>
+  <%=h @directorio.fono %>
+</p>
+
+<p>
+  <b>Direccion:</b>
+  <%=h @directorio.direccion %>
+</p>
+
+
+<%= link_to 'Edit', edit_directorio_path(@directorio) %> |
+<%= link_to 'Back', directorios_path %>

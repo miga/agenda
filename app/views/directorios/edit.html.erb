@@ -1,0 +1,32 @@
+<h1>Editing directorio</h1>
+
+<% form_for(@directorio) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </p>
+  <p>
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </p>
+  <p>
+    <%= f.label :mail %><br />
+    <%= f.text_field :mail %>
+  </p>
+  <p>
+    <%= f.label :fono %><br />
+    <%= f.text_field :fono %>
+  </p>
+  <p>
+    <%= f.label :direccion %><br />
+    <%= f.text_field :direccion %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @directorio %> |
+<%= link_to 'Back', directorios_path %>

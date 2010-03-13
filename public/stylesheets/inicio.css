@@ -1,0 +1,117 @@
+#header{    
+    background-color: #1e7a14;
+    width: 750px;
+    z-index: 1;
+    height: 60px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-right-width: 2px;
+    border-left-width: 2px;
+    border-bottom-width: 2px;
+    border-top-width: 2px;
+}
+
+#header label{
+    color: #ffffff;
+    font-size: 28px;
+}
+
+#menu{    
+    background-color: #669900;
+}
+
+#menu table tr td{
+    color: #330033;
+    font-weight: bold;
+}
+
+#footer{
+    background-color: #1e7a14;
+    width: 750px;
+    z-index: 1;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-right-width: 2px;
+    border-left-width: 2px;
+    border-bottom-width: 2px;
+    border-top-width: 2px;
+}
+
+#footer p{
+
+    color: #ffffff;
+}
+
+#login{
+    padding: 3px 10px;
+    border: green double 5px;
+    -moz-border-radius: 20px;
+     margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+
+.input_text{
+    text-align: center;
+    -moz-border-radius: 5px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-right-width: 2px;
+    border-left-width: 2px;
+    border-bottom-width: 2px;
+    border-top-width: 2px;
+    border-right-color: #000000;
+    border-left-color: #000000;
+    border-bottom-color: #000000;
+    border-top-color: #000000;
+    font-family: 'Trebuchet MS';
+}
+
+.boton{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    background-color: #1e7a14;
+    color: #ffffff;
+    text-align: center;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-right-color: green;
+    border-left-color: green;
+    border-bottom-color: green;
+    border-top-color: green;
+    font-weight: bold;
+}
+
+#user{
+    margin-bottom: -10px;
+    margin-top: -10px;
+}
+
+.tablita{
+    border-collapse: collapse;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-right-color: #000000;
+    border-left-color: #000000;
+    border-bottom-color: #000000;
+    border-top-color: #000000;
+}

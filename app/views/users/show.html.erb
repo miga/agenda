@@ -1,0 +1,35 @@
+<p>
+  <h3><b>Datos personales de <%= @user.login %></b></h3>
+</p>
+<div id="show">
+  <table>
+    <tr>
+      <td>Nick:</td>
+      <td><%=h @user.login %></td>
+    </tr>
+    <tr>
+      <td>Nombres:</td>
+      <td><%=h @user.nombres %></td>
+    </tr>
+    <tr>
+      <td>Apellidos:</td>
+      <td><%=h @user.apellidos %></td>
+    </tr>
+    <tr>
+      <td>Direcci&oacute;n:</td>
+      <td><%=h @user.direccion %></td>
+    </tr>
+    <tr>
+      <td>Telefono:</td>
+      <td><%=h @user.fono %></td>
+    </tr>
+    <tr>
+      <td>Mail:</td>
+      <td><%=h @user.mail %></td>
+    </tr>
+  </table>
+
+</div>
+<br>
+<%= link_to 'Editar', edit_user_path(@user) %> |
+<%= link_to 'Regresar', users_path %>

@@ -1,0 +1,25 @@
+<h1>Autenticaci&oacute;n</h1>
+<div id="login">
+  <% form_for @user, :url=>{:controller => "session", :action => "create"} do |f| -%>  
+  <p>
+    <%= f.label "Nick: " %><br />
+    <%= f.text_field :login, :class=>"input_text" %>
+  </p>
+  <p>
+    <%= f.label "Contraseña: " %><br />
+    <%= f.password_field :pass, :class=>"input_text" %>
+  </p>
+  <p>
+    <%= f.submit "Ingresar", :class=>"boton" %>
+  </p>
+  <%= f.error_messages %>
+<% end -%>
+</div>
+ 
+
+  <p>
+    Probar con <b>User:</b> hugo
+    <br>
+    <b>Pass:</b> 123
+    </br>
+  </p>

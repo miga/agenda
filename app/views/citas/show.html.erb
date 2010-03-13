@@ -1,0 +1,28 @@
+<p>
+  <b>Id:</b>
+  <%=h @cita.id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @cita.user_id %>
+</p>
+
+<p>
+  <b>Asunto:</b>
+  <%=h @cita.asunto %>
+</p>
+
+<p>
+  <b>Fecha:</b>
+  <%=h @cita.fecha %>
+</p>
+
+<p>
+  <b>Hora:</b>
+  <%=h @cita.hora %>
+</p>
+
+
+<%= link_to 'Edit', edit_cita_path(@cita) %> |
+<%= link_to 'Back', citas_path %>

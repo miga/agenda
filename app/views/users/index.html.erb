@@ -1,0 +1,31 @@
+<h1>Listing users</h1>
+
+<table border="1" class="tablita">
+  <tr>
+    <th>Nombres</th>
+    <th>Apellidos</th>
+    <th>Direccion</th>
+    <th>Fono</th>
+    <th>Mail</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%=h user.nombres %></td>
+    <td><%=h user.apellidos %></td>
+    <td><%=h user.direccion %></td>
+    <td><%=h user.fono %></td>
+    <td><%=h user.mail %></td>
+    <td><%= link_to 'Mostrar', user %></td>
+    <td><%= link_to 'Editar', edit_user_path(user) %></td>
+    <td><%= link_to 'Eliminar', user, :confirm => '¿Desea eliminar el registro?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nuevo usuario', new_user_path %>

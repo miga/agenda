@@ -1,0 +1,43 @@
+<h1>New user</h1>
+
+<% form_for(@user) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :login %><br />
+    <%= f.text_field :login %>
+  </p>
+  <p>
+    <%= f.label :pass %><br />
+    <%= f.text_field :pass %>
+  </p>
+  <p>
+    <%= f.label :nombres %><br />
+    <%= f.text_field :nombres %>
+  </p>
+  <p>
+    <%= f.label :apellidos %><br />
+    <%= f.text_field :apellidos %>
+  </p>
+  <p>
+    <%= f.label :direccion %><br />
+    <%= f.text_field :direccion %>
+  </p>
+  <p>
+    <%= f.label :fono %><br />
+    <%= f.text_field :fono %>
+  </p>
+  <p>
+    <%= f.label :mail %><br />
+    <%= f.text_field :mail %>
+  </p>
+  <p>
+    <%= f.label :tipo %><br />
+    <%= f.select :tipo, User::TIPOS, {:include_blank => true} %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', users_path %>

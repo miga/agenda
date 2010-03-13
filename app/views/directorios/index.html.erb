@@ -1,0 +1,28 @@
+<h1>Listing directorios</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Nombre</th>
+    <th>Mail</th>
+    <th>Fono</th>
+    <th>Direccion</th>
+  </tr>
+
+<% @directorios.each do |directorio| %>
+  <tr>
+    <td><%=h directorio.user_id %></td>
+    <td><%=h directorio.nombre %></td>
+    <td><%=h directorio.mail %></td>
+    <td><%=h directorio.fono %></td>
+    <td><%=h directorio.direccion %></td>
+    <td><%= link_to 'Show', directorio %></td>
+    <td><%= link_to 'Edit', edit_directorio_path(directorio) %></td>
+    <td><%= link_to 'Destroy', directorio, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New directorio', new_directorio_path %>
